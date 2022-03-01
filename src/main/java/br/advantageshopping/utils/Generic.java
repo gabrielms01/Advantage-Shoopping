@@ -1,4 +1,4 @@
-package br.utils;
+package br.advantageshopping.utils;
 
 import java.io.File;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import br.core.Driver;
+import br.advantageshopping.core.Driver;
 
 public class Generic extends Driver {
 	

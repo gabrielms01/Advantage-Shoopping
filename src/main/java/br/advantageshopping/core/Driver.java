@@ -1,4 +1,4 @@
-package br.core;
+package br.advantageshopping.core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

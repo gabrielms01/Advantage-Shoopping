@@ -1,6 +1,6 @@
-package br.core;
+package br.advantageshopping.core;
 
-import br.utils.Generic;
+import br.advantageshopping.utils.Generic;
 import cucumber.api.Scenario;
 
 public class Hooks extends Driver {
