@@ -23,12 +23,12 @@ public class Excel {
 	private Map<String, Integer> columns = new HashMap<String, Integer>();
 	private Row row;
 
-	public void getArquivoExcel() throws Exception {
+	public void getExcelFile() throws Exception {
 		try {
 			File file = new File("./Usuario_Cadastro.xlsx");
 			fis = new FileInputStream(file);
 			wb = WorkbookFactory.create(fis);
-			sh = wb.getSheet("Usuario");
+			sh = wb.getSheet("User");
 
 			for (Cell rows : sh.getRow(0)) {
 				columns.put(rows.getStringCellValue(), rows.getColumnIndex());
