@@ -12,7 +12,7 @@ public class Driver {
 	public static WebDriver openChrome() {
 		if (driver == null) {
 			String pathDriverChrome = System.getProperty("user.dir")
-					+ "//src/main/java/br/core/chromedriver/chromedriver.exe";
+					+ "//src/main/java/br/advantageshopping/core/chromedriver/chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", pathDriverChrome);
 			driver = new ChromeDriver();
 			wait = new WebDriverWait(Driver.openChrome(), 30);
