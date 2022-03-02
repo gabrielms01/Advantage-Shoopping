@@ -1,6 +1,7 @@
 package br.advantageshopping.page.generics;
 
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 
 public class GenericStep {
 
@@ -20,7 +21,8 @@ public class GenericStep {
 		genericLogic.toClickUser();
 	}
 	
-	/*public void validateFinalMessage () throws Exception {
+	@Then("^valido mensagem final$")
+	public void validateFinalMessage () throws Exception {
 		genericLogic.validateTest();
-	}*/
+	}
 }
