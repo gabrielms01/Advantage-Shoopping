@@ -1,5 +1,6 @@
 package br.advantageshopping.page.login;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 
@@ -21,8 +22,33 @@ public class LoginStep {
 		login.fillPassword();
 	}
 	
-	@When("^clico em logar$")
+	@And("^clico em logar$")
 	public void clickToLogin () {
 		login.clickLogin();
+	}
+	
+	@And("^seleciono a categoria tablets$")
+	public void selectTabletsCategory () {
+		login.selectTablets();
+	}
+	
+	@And("^seleciono o primeiro tablet$")
+	public void selectFirstTablet () {
+		login.selectTabletHP();
+	}
+	
+	@And("^adiciono tablet ao carrinho$")
+	public void addTabletToCart () {
+		login.addProductToCart();
+	}
+	
+	@And("^seleciono o usuario atual$")
+	public void selectUserToLogout () {
+		login.selectAtualUser();
+	}
+	
+	@When("^realizo logout$")
+	public void logoutThePage () {
+		login.logout();
 	}
 } 

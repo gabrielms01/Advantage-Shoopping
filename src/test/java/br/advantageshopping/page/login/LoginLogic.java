@@ -29,4 +29,34 @@ public class LoginLogic extends Generic {
 		waitElementIsClickable(login.getBtnLogar());
 		toClick(login.getBtnLogar());
 	}
+	
+	public void selectTablets () {
+		waitElementIsClickable(login.getPrdTablets());
+		wait(500);
+		toClick(login.getPrdTablets());
+	}
+	
+	public void selectTabletHP () {
+		waitElementIsClickable(login.getPrdTabletHP());
+		wait(500);
+		toClick(login.getPrdTabletHP());
+	}
+	
+	public void addProductToCart () {
+		waitElementIsClickable(login.getAddToCart());
+		wait(500);
+		toClick(login.getAddToCart());
+	}
+	
+	public void selectAtualUser () {
+		waitElementIsClickable(login.getSelectUser());
+		wait(500);
+		toClick(login.getSelectUser());
+	}
+	
+	public void logout () {
+		waitElementIsClickable(login.getSignOut());
+		wait(500);
+		toClick(login.getSignOut());
+	}
 }
