@@ -32,7 +32,7 @@ public class GenericLogic extends Generic {
 		String user = driver.findElement(genericPage.getUserCreateTopIcon()).getText();
 		boolean createdUserIsVisible;
 		
-		String spreadsheetUser = excel.getCellData("User", 1);
+		String spreadsheetUser = excel.getCellData("Usuario", 1);
 		
 		if (user.contains(spreadsheetUser)) {
 			createdUserIsVisible = true;

@@ -30,8 +30,7 @@ public class Generic extends Driver {
 	public static void wait (int timeInMillis) {
 		try {
 			Thread.sleep(timeInMillis);
-		}
-		catch (InterruptedException ex) {
+		} catch (InterruptedException ex) {
 			ex.printStackTrace();
 		}
 	}
@@ -50,7 +49,7 @@ public class Generic extends Driver {
 	public static void clearAndInsertText (String text, By field) {
 		if(findElement(field).isDisplayed()) {
 			findElement(field).clear();
-			wait(400);
+			wait(500);
 			findElement(field).sendKeys(text);
 		}
 	}
