@@ -25,4 +25,9 @@ public class GenericStep {
 	public void validateFinalMessage () throws Exception {
 		genericLogic.validateTest();
 	}
+	
+	@Then("^valido a mensagem final$")
+	public void validateFinalMessageLogout () throws Exception {
+		genericLogic.validateTestLogout();
+	}
 }

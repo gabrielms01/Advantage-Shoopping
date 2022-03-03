@@ -16,5 +16,5 @@ Feature: Realizar login com sucesso e adicionar produtos ao carrinho
     And adiciono tablet ao carrinho
     And seleciono o usuario atual
     When realizo logout
-    Then valido mensagem final
+    Then valido a mensagem final
 

@@ -55,8 +55,7 @@ public class LoginLogic extends Generic {
 	}
 	
 	public void logout () {
-		waitElementIsClickable(login.getSignOut());
-		wait(500);
-		toClick(login.getSignOut());
+		waitDesiredElement(login.getSignOut());
+		click(login.getSignOut());
 	}
 }
