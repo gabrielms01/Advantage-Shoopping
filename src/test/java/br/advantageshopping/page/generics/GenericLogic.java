@@ -43,4 +43,23 @@ public class GenericLogic extends Generic {
 		
 		assertTrue(createdUserIsVisible);
 	}
+	
+	public void validateTestLogout () throws Exception {
+		excel.getExcelFile();
+		waitElementIsClickable(genericPage.getTabletsTxt());
+		wait(400);
+		String user = driver.findElement(genericPage.getUserCreateTopIcon()).getText();
+		boolean createdUserIsVisible;
+		
+		String spreadsheetUser = excel.getCellData("Usuario", 1);
+		
+		if (!(user.contains(spreadsheetUser))) {
+			createdUserIsVisible = true;
+		}
+		else {
+			createdUserIsVisible = false;
+		}
+		
+		assertTrue(createdUserIsVisible);
+	}
 }

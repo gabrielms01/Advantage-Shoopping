@@ -11,7 +11,7 @@ public class LoginPage {
 	private By prdTabletHP = By.xpath("//img[@data-ng-src='/catalog/fetchImage?image_id=3100']");
 	private By addToCart = By.xpath("//button[@name='save_to_cart']");
 	private By selectUser = By.xpath("//span[@class='hi-user containMiniTitle ng-binding']");
-	private By signOut = By.xpath("//label[@translate='Sign_out'][1]");
+	private By signOut = By.xpath("//label[@ng-click='signOut($event)']");
 
 	public By getCmpUserName() {
 		return cmpUserName;
