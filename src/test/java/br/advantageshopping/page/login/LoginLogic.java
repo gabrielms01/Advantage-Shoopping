@@ -1,5 +1,8 @@
 package br.advantageshopping.page.login;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
 import br.advantageshopping.utils.Excel;
 import br.advantageshopping.utils.Generic;
 
@@ -55,7 +58,8 @@ public class LoginLogic extends Generic {
 	}
 	
 	public void logout () {
-		waitDesiredElement(login.getSignOut());
-		click(login.getSignOut());
+		WebElement element = driver.findElement(login.getSignOut());
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("arguments[0].click()", element);
 	}
 }

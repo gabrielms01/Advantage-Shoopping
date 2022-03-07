@@ -68,6 +68,10 @@ public class Generic extends Driver {
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(element));
 	}
 	
+	public void waitDesiredElementVisibility (By element) {
+	    wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(element));
+	}
+	
 	public void screenShot (String status, String testName) {
 		try {
 			TakesScreenshot source = (TakesScreenshot) Driver.openChrome();
